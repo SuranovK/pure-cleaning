@@ -1,0 +1,15 @@
+/* src/styles.css */
+body {
+    padding-top: 60px; /* Space for fixed header */
+}
+
+.home-section, .about-section, .services-section, .areas-section, .contact-section, .appointment-section, .testimonials-section {
+    padding: 60px 0;
+}
+
+.home-section {
+    background: #f8f9fa;
+    text-align: center;
+}
+
+/* Add more styling as needed */

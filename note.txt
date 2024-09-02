@@ -1,0 +1,3 @@
+SEO and Performance Optimization: Use React Helmet for managing the document head, meta tags, and other SEO-related elements.
+Responsiveness: Ensure all components are responsive, using Bootstrap classes or custom media queries.
+Animations: Add smooth scrolling and animations using libraries like AOS (Animate On Scroll).
