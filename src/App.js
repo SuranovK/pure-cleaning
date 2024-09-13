@@ -7,6 +7,7 @@ import AreasWeServe from './components/AreasWeServe';
 import Contact from './components/Contact';
 import Testimonials from './components/Testimonials';
 import AppointmentForm from './components/AppointmentForm';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -17,10 +18,11 @@ const App = () => {
         <About />
         <Services />
         <AreasWeServe />
-        <Contact />
         <Testimonials />
+        <Contact />
         <AppointmentForm />
       </main>
+      <Footer />
     </div>
   );
 };

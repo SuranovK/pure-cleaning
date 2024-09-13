@@ -1,41 +1,89 @@
-/* src/components/Footer.css */
+/* Footer.css */
 
+/* General footer styling */
 .footer {
-    background-color: #343a40;
+    background: url('../assets/footer-background.jpeg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.3;
+    color: white;
+    padding: 3px 0;
+    position: static;
+}
+
+/* Footer Vertical Lines Styling */
+.footer-lines {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: calc(100% - 4in); /* Leave 2 inches on each side for the horizontal line */
+    height: 100%;
+    position: absolute;
+    top: 192px; /* 2 inches from the top */
+    left: 2in; /* Leave 2 inches from the left edge */
+    pointer-events: none; /* Prevent lines from affecting interactions */
+}
+
+.footer-line {
+    width: 0.5px; /* Set the thickness of the line */
+    height: calc(100% - 192px); /* Shortened by 2 inches (192px) from the top */
+    background-color: black;
+}
+
+/* Footer Horizontal Line Styling */
+.footer-horizontal-line {
+    position: absolute;
+    top: 192px; /* Place 2 inches from the top */
+    left: 2in; /* Leave 2 inches from the left edge */
+    right: 2in; /* Leave 2 inches from the right edge */
+    height: 0.5px; /* Line thickness */
+    background-color: black;
+}
+
+/* Footer Logo Styling */
+.footer-logo {
+    width: 100px;
+}
+
+/* Review Button Styling */
+.review-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.review-button:hover {
+    background: linear-gradient(135deg, #0056b3, #003f7f);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Social Icons Styling */
+.social-icons a {
     color: #ffffff;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-top: 50px;
-}
-
-.footer h5 {
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-.footer p {
-    margin-bottom: 10px;
-}
-
-.footer .footer-link {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.footer .footer-link:hover {
-    color: #17a2b8;
-    text-decoration: underline;
-}
-
-.footer .social-icons a {
     font-size: 18px;
-    margin-right: 10px;
+    transition: color 0.3s ease;
 }
 
-.footer .social-icons a:hover {
-    color: #17a2b8;
+.social-icons a:hover {
+    color: #ffcc00;
 }
 
-.footer .row .col-md-4 {
-    margin-bottom: 20px;
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .footer-logo {
+        width: 80px;
+    }
+
+    .review-button {
+        padding: 8px 16px;
+    }
+
+    .social-icons a {
+        font-size: 16px;
+    }
 }
